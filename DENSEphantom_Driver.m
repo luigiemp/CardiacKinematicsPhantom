@@ -132,7 +132,7 @@ Zg(1:2:length(Zg)) = [];
 NpointsPerVoxel = sampleX*sampleY*sampleZ;
 
 % Loop over time (1 image per time)
-for s = 20%1:length(alphaTime) % loop over time
+for s = 1:length(alphaTime) % loop over time
     % Initialize Disp array to zero
     dispAllX = zeros(NvoxelX*sampleX, NvoxelY*sampleY, sampleZ); % Only needed if this information need to be saved for postprocessing
     dispAllY = zeros(NvoxelX*sampleX, NvoxelY*sampleY, sampleZ); % Only needed if this information need to be saved for postprocessing
