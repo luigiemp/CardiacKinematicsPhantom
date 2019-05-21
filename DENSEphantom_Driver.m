@@ -4,7 +4,7 @@
 % This script computes an analytical cardaic-like displacement field and 
 % simulates 3D DENSE imaging data.
 
-clear;
+clear ;
 close all ;
 clc;
 addpath(genpath('./'));
