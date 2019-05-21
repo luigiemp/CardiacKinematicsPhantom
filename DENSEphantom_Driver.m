@@ -5,7 +5,7 @@
 % simulates 3D DENSE imaging data.
 
 clear;
-close all;
+close all ;
 clc;
 addpath(genpath('./'));
 
