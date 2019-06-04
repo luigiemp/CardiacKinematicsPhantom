@@ -15,7 +15,7 @@ StartTime = cputime;
 %% Input parameters
 
 % Output path for vtk images and displacement files
-OutputPath = ''; 
+OutputPath = ' '; 
 
 OutputPathVTK = fullfile(OutputPath,'VTK');      %Export path for vtk files
 OutputPathMat = fullfile(OutputPath,'Matfiles'); %Export path for mat files
