@@ -1,5 +1,6 @@
-% % Luigi Perotti and Ilya Verzhbinsky - 2018 %
+% % Luigi Perotti and Ilya Verzhbinsky - 2019 %
 % DENSE PHANTOM DRIVER CODE
+% pulled from https://github.com/luigiemp/CardiacKinematicsPhantom
 % 
 % This script computes an analytical cardaic-like displacement field and 
 % simulates 3D DENSE imaging data.
@@ -80,8 +81,8 @@ ke_y    = 0.08;     % cycles/mm
 ke_z    = 0.08;     % cycles/mm
 
 % Noise parameters 
-SNR = [2,5,10,20,30,40,60,80,160,320];     % Normalized magnitude is 1 (||[Mx,My,Mz|| = 1)
-reps = 1; %Number of reptitions per SNR 
+SNR = [2,5,10,20,30,40,60,80,160,320];% Inf 
+reps = 5; %Number of reptitions per SNR 
 
 
 % Visualization only parameters
