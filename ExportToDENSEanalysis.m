@@ -125,15 +125,15 @@ end
     
 % convert cycle data to uint16
 Mag = uint16(Mag .* 2^12);
-Xwrap = uint16((Xwrap + 0.5) .* 2^12);
-Ywrap = uint16((Ywrap + 0.5) .* 2^12); 
-Zwrap = uint16((Zwrap + 0.5) .* 2^12);
+Xwrap = uint16((Xwrap + 0.5) .* 2^12 -1);
+Ywrap = uint16((Ywrap + 0.5) .* 2^12 -1); 
+Zwrap = uint16((Zwrap + 0.5) .* 2^12 -1);
 
    
 
 %% load in template .dns file 
 for SNRid = 1:nSNR
-    template = fullfile('template.dns'); %% Template DENSEanalysis worspace.
+    template = fullfile('template.dns'); %% Template DENSEanalysis workspace.
 
     tmp = load(template, '-mat');
 
